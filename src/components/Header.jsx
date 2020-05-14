@@ -1,11 +1,20 @@
 import React from 'react'
 
-export default function Header() {
+export default function Header({logo}) {
+    console.log(logo)
     return (
         <div>
-            <img src="../photos/logo.jpg" alt="logo"/>
-            <button>Button 1</button>
-            <button>Button 1</button>
+            <header className="header">
+                <div className="logo">
+                    <img src={logo} alt="logo"/>
+                    <h1>NASA's APOD!</h1>
+                </div>
+                
+                <div className="buttons">
+                    <button>Get Random APOD</button>
+                    <button>Learn More About NASA's API</button>
+                </div>
+            </header>
         </div>
     )
 }

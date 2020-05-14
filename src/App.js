@@ -11,13 +11,13 @@ import PhotoUrl from "./components/PhotoUrl.jsx";
 function App() {
 
   const [nasaData, setnasaData] = useState({});
+  const logo = "https://i.ibb.co/8dyR9M2/newLogo.png";
 
   useEffect(() => {
     axios.get("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY")
     .then( data => {
       console.log(data);
       setnasaData(data.data);
-      debugger
     })
     .catch( error => {
       console.log(error);
@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       
-    <Header/>
+    <Header logo={logo}/>
 
     <div className="body">
 
