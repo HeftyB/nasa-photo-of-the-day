@@ -12,7 +12,7 @@ export default function Header({logo}) {
                 
                 <div className="buttons">
                     <button>Get Random APOD</button>
-                    <button>Learn More About NASA's API</button>
+                    <button onClick={event =>  window.open("https://api.nasa.gov/#apod", "_blank")}>Learn More About NASA's API</button>
                 </div>
             </header>
         </div>

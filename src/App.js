@@ -8,6 +8,7 @@ import Date from "./components/Date.jsx";
 import Explanation from "./components/Explanation.jsx";
 import PhotoUrl from "./components/PhotoUrl.jsx";
 
+
 function App() {
 
   const [nasaData, setnasaData] = useState({});
@@ -31,20 +32,19 @@ function App() {
   
   return (
     <div className="App">
+        
+      <Header logo={logo}/>
+
+      <div className="body">
+
+        <MainImg hdurl={hdurl}/>
+        <Title title ={title}/>
+        <Date date={date}/>
+        <Explanation explanation={explanation}/>
+        <PhotoUrl hdurl={hdurl}/>
+
+      </div>
       
-    <Header logo={logo}/>
-
-    <div className="body">
-
-      <MainImg hdurl={hdurl}/>
-      <Title title ={title}/>
-      <Date date={date}/>
-      <Explanation explanation={explanation}/>
-      <PhotoUrl hdurl={hdurl}/>
-
-    </div>
-    
-
     </div>
   );
 }
