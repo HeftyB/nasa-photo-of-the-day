@@ -47,7 +47,6 @@ function App() {
     axios.get("https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=999&api_key=DEMO_KEY")
     .then( data => {
       setnasaRoverData(data.data.photos);
-      console.log(data.data.photos);
     })
     .catch( error => {
       console.log(error);
