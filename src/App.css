@@ -1,9 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 
-*{
-  /* background-color: cornflowerblue; */
-  /* border: 1px solid black; */
-}
+
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+} */
+
+
+/* *{
+  background-color: cornflowerblue;
+  border: 1px solid black;
+} */
 
 body {
   background-color: #2D2231;
@@ -65,6 +89,7 @@ code {
 img {
   width: 100%;
   border-radius: 20px;
+  margin-top: 1%;
 }
 
 .header {
@@ -74,11 +99,29 @@ img {
   align-content: center;
   /* align-items: flex-end; */
   background-color: #BC9D7E;
-  border-radius: 45%;
+  border-radius: 50%;
+  margin-bottom: 4%;
 }
 
 header img {
   width: 50px;
+  border: 1px solid black;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item, .nav-item .active {
+  background-color: #3EA6D2;
+  border-radius: 15px;
+  font-size: 90%;
+  margin: 0% .5%;
+}
+
+.nav-tabs {
+  border-bottom: 1px none black;
 }
 
 .buttons {
@@ -88,13 +131,40 @@ header img {
   width: 100%;
 }
 
+.active {
+  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
 button {
   margin: 1%;
+  padding: 3%;
+  border-radius: 20px;
+   font-weight: bold;
+   font-size: 100%;
 }
 
 .body {
   margin: 5%;
   padding: 2%;
-  background-color: #0C5274;
+  background-color: #3EA6D2;
   border-radius: 20px;
+}
+
+.title {
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 2%;
+  background-color: #0C5274;
+}
+
+
+.explanation {
+  margin: 2%;
+}
+
+.list-group {
+  border-radius: 15px;
+  margin: 3% 0%;
 }
